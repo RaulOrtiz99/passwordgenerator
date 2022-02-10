@@ -15,9 +15,11 @@ Including another URLconf
 """
 #esto es para las rutas o el manejador de rutas
 
-from django.contrib import admin
+#from django.contrib import admin
 from django.urls import path
-
+from generator import views
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('about/', views.about) #Esto es una ruta creada
+   # path('admin/', admin.site.urls),
+
 ]
