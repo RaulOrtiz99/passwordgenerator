@@ -19,7 +19,8 @@ Including another URLconf
 from django.urls import path
 from generator import views
 urlpatterns = [
-    path('about/', views.about) #Esto es una ruta creada
+    path('about/', views.about), #Esto es una ruta creada
+    path('',views.home)
    # path('admin/', admin.site.urls),
 
 ]
