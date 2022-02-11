@@ -1,8 +1,10 @@
-<form action="password">
+<div class="jumbotron">
+    <form action="password">
 
     <h1> Password generator</h1>
     <label for="lenght">Select the lenght of your password</label>
-    <select name="lenght" id="lenght">
+    <div class="card" style="margin-top: 10px;">
+        <select name="lenght" id="lenght">
         <option value="6"> 6 characters</option>
         <option value="7"> 7 characters</option>
         <option value="8"> 8 characters</option>
@@ -13,9 +15,19 @@
         <option value="13">13 characters</option>
         <option value="14">14 characters</option>
     </select>
-    <label for="uppercase">Uppercase</label>
+    </div>
+    <div class="card-content" style="margin-top: 10px;">
+        <label for="uppercase">Uppercase</label>
     <input type="checkbox" name="uppercase" id="uppercase">
 
+    <label for="numbers">Numbers</label>
+    <input type="checkbox" name="numbers" id="numbers">
+
+        <label for="special">Special characters</label>
+    <input type="checkbox" name="special" id="special">
+
     <button>Generate Password</button>
+    </div>
 
 </form>
+</div>
