@@ -20,7 +20,8 @@ from django.urls import path
 from generator import views
 urlpatterns = [
     path('about/', views.about), #Esto es una ruta creada
-    path('',views.home)
+    path('',views.home),
+    path('password',views.password)
    # path('admin/', admin.site.urls),
 
 ]
